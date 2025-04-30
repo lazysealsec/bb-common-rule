@@ -1,33 +1,25 @@
 {
   "name": "Corp Mother Rules",
-  "description": "办公 + 开发工具放行，其余全部拒绝",
+  "description": "test",
   "rules": [
-
-    /* ---------- 系统必需 ---------- */
     { "action": "allow", "process": "appGroup.macOS", "direction": "both", "notes": "macOS 后台与守护进程" },
     { "action": "allow", "process": "identifier.APPLE/com.apple.mDNSResponder", "direction": "both", "notes": "DNS / Bonjour" },
 
-    /* ---------- 办公软件 ---------- */
-    { "action": "allow", "process": "identifier.EQHXZ8M8AV/com.google.Chrome", "direction": "outgoing", "notes": "Chrome 浏览器" },
-    { "action": "allow", "process": "identifier.JBRN9C6V7T/com.larksuite.larkApp", "direction": "outgoing", "notes": "Lark/飞书" },
-    { "action": "allow", "process": "identifier.5A4RE8SF68/com.tencent.xinWeChat", "direction": "outgoing", "notes": "企业微信/WeChat" },
+    { "action": "allow", "process": "identifier.EQHXZ8M8AV/com.google.Chrome", "direction": "outgoing", "notes": "Google Chrome" },
+    { "action": "allow", "process": "identifier.JBRN9C6V7T/com.larksuite.larkApp", "direction": "outgoing", "notes": "Lark / 飞书" },
+    { "action": "allow", "process": "identifier.5A4RE8SF68/com.tencent.xinWeChat", "direction": "outgoing", "notes": "企业微信 / WeChat" },
     { "action": "allow", "process": "identifier.YK4WKE5WAM/com.kingsoft.wpsoffice.mac", "direction": "outgoing", "notes": "WPS Office" },
 
-    /* ---------- 开发工具 ---------- */
-    { "action": "allow", "process": "identifier.UBF8T346G9/com.microsoft.VSCode", "direction": "outgoing", "notes": "VS Code" },
+    { "action": "allow", "process": "identifier.UBF8T346G9/com.microsoft.VSCode", "direction": "outgoing", "notes": "Visual Studio Code" },
     { "action": "allow", "process": "identifier.2ZEFAR8TH3/com.jetbrains.goland", "direction": "outgoing", "notes": "GoLand" },
     { "action": "allow", "process": "identifier.2ZEFAR8TH3/com.jetbrains.pycharm.ce", "direction": "outgoing", "notes": "PyCharm CE" },
-    { "action": "allow", "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2", "direction": "outgoing", "notes": "iTerm2" },
+    { "action": "allow", "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2", "direction": "outgoing", "notes": "iTerm 2" },
     { "action": "allow", "process": "identifier.9BNSXJN65R/com.docker.docker", "direction": "outgoing", "notes": "Docker Desktop" },
 
-    /* Git / SSH 出网 */
-    { "action": "allow", "remote-domains": ["github.com","githubusercontent.com"], "ports": "22,443",
-      "direction": "outgoing", "notes": "Git / GitHub" },
+    { "action": "allow", "remote-domains": ["github.com", "githubusercontent.com"], "ports": "22,443", "direction": "outgoing", "notes": "Git / GitHub" },
 
-    /* ---------- 内网 ---------- */
-    { "action": "allow", "remote": "local-net", "direction": "both", "notes": "公司局域网访问" },
+    { "action": "allow", "remote": "local-net", "direction": "both", "notes": "公司内网 (LAN / VPN)" },
 
-    /* ---------- 兜底 ---------- */
-    { "action": "deny", "process": "any", "direction": "both", "priority": "last", "notes": "默认拒绝其余所有流量" }
+    { "action": "deny", "process": "any", "direction": "both", "priority": "last", "notes": "默认拒绝所有未匹配流量" }
   ]
 }
