@@ -6,6 +6,7 @@
     { "action": "allow", "process": "identifier.APPLE/com.apple.mDNSResponder", "direction": "both", "notes": "DNS / Bonjour" },
 
     { "action": "allow", "process": "identifier.EQHXZ8M8AV/com.google.Chrome", "direction": "outgoing", "notes": "Google Chrome" },
+    { "action": "allow", "process": "MLZF7K7B5R/at.obdev.littlesnitch.networking", "direction": "outgoing", "notes": "littlesnitch Network" },
     { "action": "allow", "process": "identifier.JBRN9C6V7T/com.larksuite.larkApp", "direction": "outgoing", "notes": "Lark / 飞书" },
     { "action": "allow", "process": "identifier.5A4RE8SF68/com.tencent.xinWeChat", "direction": "outgoing", "notes": "企业微信 / WeChat" },
     { "action": "allow", "process": "identifier.YK4WKE5WAM/com.kingsoft.wpsoffice.mac", "direction": "outgoing", "notes": "WPS Office" },
