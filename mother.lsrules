@@ -16,6 +16,60 @@
     { "action": "allow", "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2", "direction": "outgoing", "notes": "iTerm 2" },
     { "action": "allow", "process": "identifier.9BNSXJN65R/com.docker.docker", "direction": "outgoing", "notes": "Docker Desktop" },
 
+    {
+      "action": "allow",
+      "process": "identifier.4AYE5J54KN/com.sentinelone.sentineld",
+      "direction": "both",
+      "remote": "any",
+      "notes": "SentinelOne sentineld"
+    },
+
+    {
+      "action": "allow",
+      "process": "identifier.S6NQ524Y5V/SecureLink_Client",
+      "direction": "outgoing",
+      "remote": "any",
+      "notes": "SecureLink_Client"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.S6NQ524Y5V/SecureLink_Core",
+      "direction": "outgoing",
+      "remote": "any",
+      "notes": "SecureLink_Core"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.S6NQ524Y5V/SecureLink_DP",
+      "direction": "outgoing",
+      "remote": "any",
+      "notes": "SecureLink_DP"
+    },
+
+    {
+      "action": "allow",
+      "process": "identifier.6B676QFWFA/wapptunneld",
+      "direction": "outgoing",
+      "remote": "any",
+      "notes": "Akamai wapptunneld"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.6B676QFWFA/com.akamai.aztc.service",
+      "direction": "outgoing",
+      "remote": "any",
+      "notes": "Akamai aztc.service"
+    },
+
+    {
+      "action": "allow",
+      "process": "identifier.483DWKW443/com.jamf.management.daemon",
+      "direction": "outgoing",
+      "remote": "any",
+      "notes": "JamfDaemon"
+    }
+
+
     { "action": "allow", "remote-domains": ["github.com", "githubusercontent.com"], "ports": "22,443", "direction": "outgoing", "notes": "Git / GitHub" },
 
     { "action": "allow", "remote": "local-net", "direction": "both", "notes": "公司内网 (LAN / VPN)" },
