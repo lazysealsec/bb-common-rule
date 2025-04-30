@@ -1,0 +1,381 @@
+{
+  "description" : "",
+  "name" : "test",
+  "rules" : [
+    {
+      "action" : "allow",
+      "notes" : "This rule enables access to services by Apple.",
+      "remote-domains" : [
+        "apple",
+        "apple-cloudkit.com",
+        "apple-mapkit.com",
+        "apple.com",
+        "apple.news",
+        "cdn-apple.com",
+        "mzstatic.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule enables access to services by Apple.",
+      "remote-domains" : [
+        "apple",
+        "apple-cloudkit.com",
+        "apple-mapkit.com",
+        "apple.com",
+        "apple.news",
+        "cdn-apple.com",
+        "mzstatic.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "direction" : "both",
+      "notes" : "Allows network connections for all background- and helper processes of macOS.",
+      "process" : "appGroup.macOS",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.2BUA8C4S2C\/com.agilebits.onepassword7",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.X57AWWXKJY\/com.yingdao.yd",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.JQ525L2MZD\/com.adobe.Reader",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.6B676QFWFA\/com.akamai.aztclient",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.XZZXE9SED4\/com.runningwithcrayons.Alfred",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.94KV3E626L\/com.amazon.Amazon-Chime",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.6B676QFWFA\/com.akamai.etpclient.extensions",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.738UU3Y57V\/com.baidu.BaiduNetdisk-mac",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.N82YM748DZ\/com.install4j.7318-9294-3757-1226.70",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.C489D5E8E8\/com.forcepoint.certchecker-app",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.9A5PCU4FSD\/com.xk72.Charles",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.42B6MDKMW8\/org.jkiss.dbeaver.core.product",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "\/Applications\/Debugtron.app\/Contents\/MacOS\/debugtron",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.VBG97UB4TA\/com.objective-see.DHS",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.53Q6R32WPB\/com.hnc.Discord",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.9BNSXJN65R\/com.docker.docker",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "\/Applications\/etcd-manager.app\/Contents\/MacOS\/etcd-manager",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.CHSQ3M3P37\/com.progress-telerik.fiddler",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.43AQ936H96\/org.mozilla.firefox",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.C489D5E8E8\/com.websense.Forcepoint-Decryption-Utility",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.C489D5E8E8\/com.websense.endpoint",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.Q6M7LEEA66\/com.DanPristupov.Fork",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.C489D5E8E8\/com.forcepoint.ne-app",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.2ZEFAR8TH3\/com.jetbrains.goland",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.Chrome",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.2WEVDGL75J\/com.install4j.9910-2956-2273-0006.23",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.2HCKV38EEC\/com.p5sys.jump.mac.viewer.web",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.VBG97UB4TA\/com.objective-see.KextViewr",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.VBG97UB4TA\/com.objective-see.KnockKnock",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.JBRN9C6V7T\/com.larksuite.larkApp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.JJ22T2W355\/com.electron.kontena-lens",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.MLZF7K7B5R\/at.obdev.littlesnitch",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.VBG97UB4TA\/com.objective-see.lulu.app",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.VBG97UB4TA\/com.objective-see.Netiquette",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.ACV7L3WCD8\/org.openvpn.client.app",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.H7H8Q7M5CK\/com.postmanlabs.mac",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.VBG97UB4TA\/com.objective-see.processmonitor",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.NXELXU5YLW\/com.initex.proxifier.v3.macos",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.2ZEFAR8TH3\/com.jetbrains.pycharm.ce",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.HZF9JMC8YN\/com.carriez.rustdesk",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.S6NQ524Y5V\/com.wangsu.securelink",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.483DWKW443\/com.jamfsoftware.selfservice.mac",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.4AYE5J54KN\/com.sentinelone.extensions-wrapper",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.NGTL73P583\/com.Snipaste",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.YCKFLA6N72\/com.nssurge.surge-mac",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.YCKFLA6N72\/com.nssurge.surge-dashboard",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.J5J6USUX2F\/SwitchHosts",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.VBG97UB4TA\/com.objective-see.TaskExplorer",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "\/Applications\/Tiny RDM.app\/Contents\/MacOS\/tinyrdm",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.ACV7L3WCD8\/net.openvpn.uninstaller",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.UBF8T346G9\/com.microsoft.VSCode",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.5A4RE8SF68\/com.tencent.xinWeChat",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.7Z6EMTD2C6\/org.wireshark.Wireshark",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.94KV3E626L\/com.amazon.workspaces",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.BJ4HAAB9B3\/us.zoom.xos",
+      "remote" : "any"
+    }
+  ]
+}
