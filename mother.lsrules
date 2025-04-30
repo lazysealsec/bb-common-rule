@@ -67,8 +67,7 @@
       "direction": "outgoing",
       "remote": "any",
       "notes": "JamfDaemon"
-    }
-
+    },
 
     { "action": "allow", "remote-domains": ["github.com", "githubusercontent.com"], "ports": "22,443", "direction": "outgoing", "notes": "Git / GitHub" },
 
