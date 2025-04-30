@@ -1,6 +1,5 @@
 {
   "name": "Corp Mother Rules",
-  "identifier": "com.corp.mother",
   "description": "办公 + 开发工具放行，其余全部拒绝",
   "rules": [
 
