@@ -1,11 +1,8 @@
 {
-  "description" : "",
-  "name" : "koen-test",
+  "description" : "母本：白名单 + 默认拒绝所有流量",
+  "name" : "mother rules",
   "rules" : [
-    {
-      "action" : "deny",
-      "remote-domains" : "d3uytg7spjw74w.cloudfront.net"
-    },
+    
     {
       "action" : "allow",
       "notes" : "This rule is necessary if you want to use iCloud services.",
@@ -1330,6 +1327,14 @@
       "notes" : "On Mar 7, 2025, ZoomUpdater tried to establish a connection to multiple servers. The request was denied in Network Monitor.",
       "process" : "identifier.BJ4HAAB9B3\/us.zoom.updater",
       "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "notes" : "Default deny all",
+      "process" : "any",
+      "direction" : "both",
+      "priority": "last"
     }
+
   ]
 }
