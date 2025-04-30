@@ -1,0 +1,1335 @@
+{
+  "description" : "",
+  "name" : "koen-test",
+  "rules" : [
+    {
+      "action" : "deny",
+      "remote-domains" : "d3uytg7spjw74w.cloudfront.net"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule is necessary if you want to use iCloud services.",
+      "ports" : "443",
+      "remote-domains" : [
+        "icloud-content.com",
+        "icloud.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule is necessary if you want to use iCloud services.",
+      "ports" : "443",
+      "remote-domains" : [
+        "icloud-content.com",
+        "icloud.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule enables access to services by Apple.",
+      "remote-domains" : [
+        "apple",
+        "apple-cloudkit.com",
+        "apple-mapkit.com",
+        "apple.com",
+        "apple.news",
+        "cdn-apple.com",
+        "mzstatic.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule enables access to services by Apple.",
+      "remote-domains" : [
+        "apple",
+        "apple-cloudkit.com",
+        "apple-mapkit.com",
+        "apple.com",
+        "apple.news",
+        "cdn-apple.com",
+        "mzstatic.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "direction" : "both",
+      "notes" : "Local Network is an alias for your home or company network. Technically speaking, it covers all networks your computer is physically connected to (e.g. via Wi-Fi, ethernet cable, dial-up connection, etc). The represented address ranges are updated with every change of your network configuration.",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
+      "direction" : "both",
+      "notes" : "Local Network is an alias for your home or company network. Technically speaking, it covers all networks your computer is physically connected to (e.g. via Wi-Fi, ethernet cable, dial-up connection, etc). The represented address ranges are updated with every change of your network configuration.",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "notes" : "ICMP data packets are used to propagate information relating to the network itself, e.g. whether a host is unreachable or whether a remote port is not ready to receive connections. This rule allows all system processes to receive ICMP data packets.",
+      "protocol" : "icmp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "notes" : "ICMP data packets are used to propagate information relating to the network itself, e.g. whether a host is unreachable or whether a remote port is not ready to receive connections. This rule allows all user processes to receive ICMP data packets.",
+      "protocol" : "icmp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "direction" : "both",
+      "notes" : "Allows network connections for all background- and helper processes of macOS.",
+      "process" : "appGroup.macOS",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Dec 30, 2024, 1Password 7 tried to establish a connection to in.appcenter.ms. The request was allowed in Network Monitor.",
+      "process" : "identifier.2BUA8C4S2C\/com.agilebits.onepassword7",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.2BUA8C4S2C\/com.agilebits.onepassword7",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Dec 30, 2024, 1Password Extension Helper tried to establish a connection to in.appcenter.ms. The request was allowed in Network Monitor.",
+      "process" : "identifier.2BUA8C4S2C\/2BUA8C4S2C.com.agilebits.onepassword7-helper",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.X57AWWXKJY\/com.yingdao.yd",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "notes" : "On Dec 30, 2024, Acrobat Update Helper tried to establish a connection to armmf.adobe.com. The request was denied in Network Monitor.",
+      "process" : "identifier.JQ525L2MZD\/com.adobe.ARMDCHelper",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.ActivityMonitor",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "notes" : "On Apr 28, 2025, Adobe Acrobat Reader tried to establish a connection to multiple servers. The request was denied in Network Monitor.",
+      "process" : "identifier.JQ525L2MZD\/com.adobe.Reader",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.JQ525L2MZD\/com.adobe.Reader",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "notes" : "On Feb 25, 2025, Adobe Crash Processor tried to establish a connection to cc-api-data.adobe.io. The request was denied in Network Monitor.",
+      "process" : "identifier.JQ525L2MZD\/com.adobe.AdobeCRDaemon",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.airport.airportutility",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.6B676QFWFA\/com.akamai.aztclient",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.XZZXE9SED4\/com.runningwithcrayons.Alfred",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.XZZXE9SED4\/com.runningwithcrayons.Alfred",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.94KV3E626L\/com.amazon.Amazon-Chime",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.AppStore",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.audio.AudioMIDISetup",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.Automator",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.6B676QFWFA\/com.akamai.etpclient.extensions",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Apr 30, 2025, aztservice tried to establish a connection to multiple servers. The request was allowed in Network Monitor.",
+      "process" : "identifier.6B676QFWFA\/com.akamai.aztc.service",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.738UU3Y57V\/com.baidu.BaiduNetdisk-mac",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.BluetoothFileExchange",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.iBooksX",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.bootcampassistant",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Jan 15, 2025, Burp Suite Professional tried to establish a connection to portswigger.net. The request was allowed via connection alert.",
+      "process" : "identifier.N82YM748DZ\/com.install4j.7318-9294-3757-1226.70",
+      "remote-domains" : "portswigger.net"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.N82YM748DZ\/com.install4j.7318-9294-3757-1226.70",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.calculator",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.iCal",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.C489D5E8E8\/com.forcepoint.certchecker-app",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.9A5PCU4FSD\/com.xk72.Charles",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.Chess",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.clock",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.ColorSyncUtility",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "ports" : "68",
+      "process" : "identifier.APPLE\/com.apple.configd",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.Console",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.AddressBook",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.42B6MDKMW8\/org.jkiss.dbeaver.core.product",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "\/Applications\/Debugtron.app\/Contents\/MacOS\/debugtron",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.VBG97UB4TA\/com.objective-see.DHS",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.Dictionary",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.DigitalColorMeter",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.53Q6R32WPB\/com.hnc.Discord",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.DiskUtility",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.9BNSXJN65R\/com.docker.docker",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Dec 30, 2024, EndPointClassifier tried to establish a connection to multiple servers. The request was allowed in Network Monitor.",
+      "process" : "identifier.C489D5E8E8\/EndPointClassifier",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "\/Applications\/etcd-manager.app\/Contents\/MacOS\/etcd-manager",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.FaceTime",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.CHSQ3M3P37\/com.progress-telerik.fiddler",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.findmy",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Jan 15, 2025, firefox tried to establish a connection to detectportal.firefox.com. The request was allowed via connection alert.",
+      "process" : "identifier.43AQ936H96\/org.mozilla.firefox",
+      "remote-domains" : "firefox.com"
+    },
+    {
+      "action" : "deny",
+      "notes" : "On Mar 26, 2025, firefox tried to establish a connection to multiple servers. The request was denied in Network Monitor.",
+      "process" : "identifier.43AQ936H96\/org.mozilla.firefox",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.43AQ936H96\/org.mozilla.firefox",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.FontBook",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.C489D5E8E8\/com.websense.Forcepoint-Decryption-Utility",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.C489D5E8E8\/com.websense.endpoint",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.Q6M7LEEA66\/com.DanPristupov.Fork",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.C489D5E8E8\/com.forcepoint.ne-app",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.C489D5E8E8\/fpnpd",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.freeform",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.V85GBYB7B9\/com.tristan.FSMonitor",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Jan 15, 2025, GoLand tried to establish a connection to 230.230.230.230. The request was allowed via connection alert.",
+      "process" : "identifier.2ZEFAR8TH3\/com.jetbrains.goland",
+      "remote-addresses" : "230.230.230.230"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Jan 15, 2025, GoLand via ssh tried to establish a connection to git.bybitsec.com. The request was allowed via connection alert.",
+      "process" : "identifier.2ZEFAR8TH3\/com.jetbrains.goland",
+      "remote-domains" : "bybitsec.com",
+      "via" : "path.opt\/homebrew\/Cellar\/openssh\/*\/bin\/ssh"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.2ZEFAR8TH3\/com.jetbrains.goland",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.Chrome",
+      "remote-domains" : "baidu.com"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Dec 30, 2024, Google Chrome via Google Chrome Helper tried to establish a connection to ssl.gstatic.com. The request was allowed via connection alert.",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.Chrome",
+      "remote-domains" : "gstatic.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.Chrome",
+      "remote-domains" : "larksuite.com"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Apr 23, 2025, Google Chrome tried to establish a connection to multiple servers. The request was allowed in Network Monitor.",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.Chrome",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.Chrome",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.Chrome",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Mar 13, 2025, Google Chrome Helper tried to establish a connection to multiple servers. The request was allowed in Network Monitor.",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.Chrome.helper",
+      "remote-domains" : "baidu.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.Chrome.helper",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.GoogleUpdater",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.grapher",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.Home",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.Image_Capture",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "notes" : "On Mar 6, 2025, Install Setapp tried to establish a connection to multiple servers. The request was denied in Network Monitor.",
+      "process" : "identifier.MEHY5QF425\/com.setapp.InstallSetapp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.ScreenContinuity",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Mar 13, 2025, iTerm via ssh tried to establish a connection to 13.229.180.123. The request was allowed via connection alert.",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote-addresses" : "13.229.180.123",
+      "via" : "path.opt\/homebrew\/Cellar\/openssh\/*\/bin\/ssh"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Mar 13, 2025, iTerm via ssh tried to establish a connection to 13.250.28.45. The request was allowed via connection alert.",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote-addresses" : "13.250.28.45",
+      "via" : "path.opt\/homebrew\/Cellar\/openssh\/*\/bin\/ssh"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Apr 29, 2025, iTerm via node tried to establish a connection to 104.16.27.34. The request was allowed via connection alert.",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote-addresses" : "104.16.27.34",
+      "via" : "path.opt\/homebrew\/Cellar\/node\/*\/bin\/node"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Apr 28, 2025, iTerm via node tried to establish a connection to 104.16.31.34. The request was allowed via connection alert.",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote-addresses" : "104.16.31.34",
+      "via" : "path.opt\/homebrew\/Cellar\/node\/*\/bin\/node"
+    },
+    {
+      "action" : "deny",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote-hosts" : "d3uytg7spjw74w.cloudfront.net",
+      "via" : "identifier.SHA256\/9af0a63f20b34a66991a6a762d3a64edbea30f67aa2bae7de33822683b117347"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote-hosts" : "d3uytg7spjw74w.cloudfront.net",
+      "via" : "identifier.SHA256\/aff4d4c76449f1ff8afbc8d89bb6b077241e6769c3d5c5a282c7712b56809c1e"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Mar 17, 2025, iTerm via SL tried to establish a connection to d3uytg7spjw74w.cloudfront.net. The request was allowed in Network Monitor.",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote-hosts" : "d3uytg7spjw74w.cloudfront.net",
+      "via" : "identifier.SHA256\/a20f0aaf2edb4a6da2ad07321e8e897bb77a0543b5172cc0e15ad4936035c61c"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Dec 30, 2024, iTerm tried to establish a connection to raw.githubusercontent.com. The request was allowed in Network Monitor.",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote-hosts" : "raw.githubusercontent.com"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Mar 13, 2025, iTerm via Python tried to establish a connection to redshift-data.ap-southeast-1.amazonaws.com. The request was allowed via connection alert.",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote-domains" : "ap-southeast-1.amazonaws.com",
+      "via" : "path.opt\/homebrew\/Cellar\/python@3.11\/*\/Frameworks\/Python.framework\/Versions\/3.11\/Resources\/Python.app\/Contents\/MacOS\/Python"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Mar 10, 2025, iTerm via securelink tried to establish a connection to d3uytg7spjw74w.cloudfront.net. The request was allowed via connection alert.",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote-domains" : "d3uytg7spjw74w.cloudfront.net",
+      "via" : "\/Users\/sh00817ml\/Desktop\/securelink"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Feb 25, 2025, iTerm via Python tried to establish a connection to dualstack.python.map.fastly.net. The request was allowed via connection alert.",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote-domains" : "fastly.net",
+      "via" : "path.opt\/homebrew\/Cellar\/python@3.11\/*\/Frameworks\/Python.framework\/Versions\/3.11\/Resources\/Python.app\/Contents\/MacOS\/Python"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Apr 6, 2025, iTerm via ssh tried to establish a connection to github.com. The request was allowed via connection alert.",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote-domains" : "github.com",
+      "via" : "path.opt\/homebrew\/Cellar\/openssh\/*\/bin\/ssh"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Apr 7, 2025, iTerm via ruby tried to establish a connection to api.github.com. The request was allowed via connection alert.",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote-domains" : "github.com",
+      "via" : "path.opt\/homebrew\/Cellar\/ruby\/*\/bin\/ruby"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Apr 25, 2025, iTerm via node tried to establish a connection to registry.npmjs.org. The request was allowed via connection alert.",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote-domains" : "npmjs.org",
+      "via" : "path.opt\/homebrew\/Cellar\/node\/*\/bin\/node"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Feb 25, 2025, iTerm via Python tried to establish a connection to pypi.org. The request was allowed via connection alert.",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote-domains" : "pypi.org",
+      "via" : "path.opt\/homebrew\/Cellar\/python@3.11\/*\/Frameworks\/Python.framework\/Versions\/3.11\/Resources\/Python.app\/Contents\/MacOS\/Python"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Apr 20, 2025, iTerm via wget tried to establish a connection to docs.python.org. The request was allowed via connection alert.",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote-domains" : "python.org",
+      "via" : "path.opt\/homebrew\/Cellar\/wget\/*\/bin\/wget"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Apr 14, 2025, iTerm via jamf tried to establish a connection to bye.jamf.vip. The request was allowed in Network Monitor.",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote-domains" : "jamf.vip",
+      "via" : "identifier.483DWKW443\/com.jamfsoftware.jamf"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Dec 30, 2024, iTerm tried to establish a connection to raw.githubusercontent.com. The request was allowed in Network Monitor.",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote-domains" : "githubusercontent.com"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Apr 29, 2025, iTerm via node tried to establish a connection to nodejs.org. The request was allowed via connection alert.",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote" : "any",
+      "via" : "path.opt\/homebrew\/Cellar\/node\/*\/bin\/node"
+    },
+    {
+      "action" : "deny",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote" : "any",
+      "via" : "identifier.SHA256\/9af0a63f20b34a66991a6a762d3a64edbea30f67aa2bae7de33822683b117347"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote" : "any",
+      "via" : "identifier.SHA256\/c22df2d6daa145ccac5cfa21a457bb940bf8ff3e0b203d797f0e2c772181b485"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Dec 30, 2024, jamf tried to establish a connection to bye.jamf.vip. The request was allowed in Network Monitor.",
+      "process" : "identifier.483DWKW443\/com.jamfsoftware.jamf",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Apr 30, 2025, JamfDaemon tried to establish a connection to multiple servers. The request was allowed in Network Monitor.",
+      "process" : "identifier.483DWKW443\/com.jamf.management.daemon",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.2WEVDGL75J\/com.install4j.9910-2956-2273-0006.23",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Jan 15, 2025, Jump Desktop tried to establish a connection to 52.221.228.97. The request was allowed via connection alert.",
+      "process" : "identifier.2HCKV38EEC\/com.p5sys.jump.mac.viewer.web",
+      "remote-addresses" : "52.221.228.97"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.2HCKV38EEC\/com.p5sys.jump.mac.viewer.web",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.VBG97UB4TA\/com.objective-see.KextViewr",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.74J34U3R6X\/com.apple.iWork.Keynote",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.VBG97UB4TA\/com.objective-see.KnockKnock",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.JBRN9C6V7T\/com.larksuite.larkApp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.JBRN9C6V7T\/com.larksuite.larkApp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.launchpad.launcher",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.JJ22T2W355\/com.electron.kontena-lens",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.MLZF7K7B5R\/at.obdev.littlesnitch",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.MLZF7K7B5R\/at.obdev.littlesnitch",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.MLZF7K7B5R\/at.obdev.littlesnitch.networking",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.MLZF7K7B5R\/at.obdev.littlesnitch.softwareupdate",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.VBG97UB4TA\/com.objective-see.lulu.app",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "ports" : "25, 110, 143, 465, 587, 993, 995",
+      "process" : "identifier.APPLE\/com.apple.mail",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.Maps",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.APPLE\/com.apple.mDNSResponder",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.MobileSMS",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.MigrateAssistant",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.exposelauncher",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.Music",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.VBG97UB4TA\/com.objective-see.Netiquette",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.news",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.Notes",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.APPLE\/com.apple.ocspd",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "notes" : "On Mar 9, 2025, Ollama tried to establish a connection to multiple servers. The request was denied in Network Monitor.",
+      "process" : "identifier.3MU9H2V9Y9\/com.electron.ollama",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.ACV7L3WCD8\/org.openvpn.client.app",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.Passwords",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.PhotoBooth",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.Photos",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.podcasts",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.H7H8Q7M5CK\/com.postmanlabs.mac",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.Preview",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.printcenter",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.VBG97UB4TA\/com.objective-see.processmonitor",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.NXELXU5YLW\/com.initex.proxifier.v3.macos",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.2ZEFAR8TH3\/com.jetbrains.pycharm.ce",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.QuickTimePlayerX",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.reminders",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.HZF9JMC8YN\/com.carriez.rustdesk",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "notes" : "On Apr 28, 2025, Safari tried to establish a connection to www.baidu.com. The request was denied in Network Monitor.",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "remote-domains" : "baidu.com"
+    },
+    {
+      "action" : "deny",
+      "notes" : "On Apr 28, 2025, Safari tried to establish a connection to multiple servers. The request was denied in Network Monitor.",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "direction" : "both",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.ScreenSharing",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.screenshot.launcher",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.ScriptEditor2",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.S6NQ524Y5V\/com.wangsu.securelink",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Jan 15, 2025, SecureLink_Client tried to establish a connection to 180.163.119.90 using the ICMP protocol. The request was allowed via connection alert.",
+      "process" : "identifier.S6NQ524Y5V\/SecureLink_Client",
+      "remote-addresses" : "180.163.119.90"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Jan 15, 2025, SecureLink_Client tried to establish a connection to www.baidu.com using the ICMP protocol. The request was allowed via connection alert.",
+      "process" : "identifier.S6NQ524Y5V\/SecureLink_Client",
+      "remote-domains" : "baidu.com"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Jan 15, 2025, SecureLink_Client tried to establish a connection to sheetaapi.wangsu.com. The request was allowed via connection alert.",
+      "process" : "identifier.S6NQ524Y5V\/SecureLink_Client",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Jan 15, 2025, SecureLink_Core tried to establish a connection to 180.163.119.90. The request was allowed via connection alert.",
+      "process" : "identifier.S6NQ524Y5V\/SecureLink_Core",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Jan 15, 2025, SecureLink_DP tried to establish a connection to 114.114.114.114. The request was allowed via connection alert.",
+      "process" : "identifier.S6NQ524Y5V\/SecureLink_DP",
+      "remote-addresses" : "114.114.114.114"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Jan 15, 2025, SecureLink_DP tried to establish a connection to 8.8.8.8. The request was allowed via connection alert.",
+      "process" : "identifier.S6NQ524Y5V\/SecureLink_DP",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.483DWKW443\/com.jamfsoftware.selfservice.mac",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.4AYE5J54KN\/com.sentinelone.sentineld",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Apr 14, 2025, sentineld_helper tried to establish a connection to apne1-1002.sentinelone.net. The request was allowed in Network Monitor.",
+      "process" : "identifier.4AYE5J54KN\/com.sentinelone.sentineld-helper",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.4AYE5J54KN\/com.sentinelone.extensions-wrapper",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.shortcuts",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.siri.launcher",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "process" : "identifier.NGTL73P583\/com.Snipaste",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.NGTL73P583\/com.Snipaste",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "notes" : "On Feb 24, 2025, Squirrel tried to establish a connection to rime.github.io. The request was denied via connection alert.",
+      "process" : "\/Library\/Input Methods\/Squirrel.app\/Contents\/MacOS\/Squirrel",
+      "remote-hosts" : "rime.github.io"
+    },
+    {
+      "action" : "deny",
+      "notes" : "On Apr 25, 2025, Squirrel tried to establish a connection to rime.github.io. The request was denied in Network Monitor.",
+      "process" : "\/Library\/Input Methods\/Squirrel.app\/Contents\/MacOS\/Squirrel",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.Stickies",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.stocks",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "notes" : "On Dec 30, 2024, StocksWidget tried to establish a connection to multiple servers. The request was denied in Network Monitor.",
+      "process" : "identifier.APPLE\/com.apple.stocks.widget",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "notes" : "On Dec 30, 2024, a computer with IP address 119.29.29.29 tried to establish an incoming connection to Surge. The request was allowed via connection alert.",
+      "process" : "identifier.YCKFLA6N72\/com.nssurge.surge-mac",
+      "remote-addresses" : "119.29.29.29"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Dec 30, 2024, Surge tried to establish a connection to 223.5.5.5. The request was allowed via connection alert.",
+      "process" : "identifier.YCKFLA6N72\/com.nssurge.surge-mac",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.YCKFLA6N72\/com.nssurge.surge-mac",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.YCKFLA6N72\/com.nssurge.surge-dashboard",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.J5J6USUX2F\/SwitchHosts",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.SystemProfiler",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.systempreferences",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.VBG97UB4TA\/com.objective-see.TaskExplorer",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.Terminal",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.TextEdit",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.backup.launcher",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "\/Applications\/Tiny RDM.app\/Contents\/MacOS\/tinyrdm",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.helpviewer",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.APPLE\/com.apple.trustd",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.APPLE\/com.apple.trustd",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.ACV7L3WCD8\/net.openvpn.uninstaller",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.TV",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Apr 20, 2025, Visual Studio Code via node tried to establish a connection to 104.16.3.35. The request was allowed via connection alert.",
+      "process" : "identifier.UBF8T346G9\/com.microsoft.VSCode",
+      "remote-addresses" : "104.16.3.35",
+      "via" : "path.opt\/homebrew\/Cellar\/node\/*\/bin\/node"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Apr 20, 2025, Visual Studio Code via node tried to establish a connection to 104.16.25.34. The request was allowed via connection alert.",
+      "process" : "identifier.UBF8T346G9\/com.microsoft.VSCode",
+      "remote-addresses" : "104.16.25.34",
+      "via" : "path.opt\/homebrew\/Cellar\/node\/*\/bin\/node"
+    },
+    {
+      "action" : "deny",
+      "notes" : "On Feb 24, 2025, Visual Studio Code via node tried to establish a connection to registry.npmjs.org. The request was denied via connection alert.",
+      "process" : "identifier.UBF8T346G9\/com.microsoft.VSCode",
+      "remote-domains" : "npmjs.org",
+      "via" : "path.opt\/homebrew\/Cellar\/node\/*\/bin\/node"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Dec 30, 2024, Visual Studio Code tried to establish a connection to vscode.download.prss.microsoft.com. The request was allowed in Network Monitor.",
+      "process" : "identifier.UBF8T346G9\/com.microsoft.VSCode",
+      "remote-domains" : "microsoft.com"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Dec 30, 2024, Visual Studio Code tried to establish a connection to update.code.visualstudio.com. The request was allowed in Network Monitor.",
+      "process" : "identifier.UBF8T346G9\/com.microsoft.VSCode",
+      "remote-domains" : "visualstudio.com"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Dec 30, 2024, Visual Studio Code via ssh tried to establish a connection to 47.129.225.36. The request was allowed via connection alert.",
+      "process" : "identifier.UBF8T346G9\/com.microsoft.VSCode",
+      "remote" : "any",
+      "via" : "path.opt\/homebrew\/Cellar\/openssh\/*\/bin\/ssh"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Jan 15, 2025, Visual Studio Code via Code Helper tried to establish a connection to main.vscode-cdn.net. The request was allowed via connection alert.",
+      "process" : "identifier.UBF8T346G9\/com.microsoft.VSCode",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.UBF8T346G9\/com.microsoft.VSCode",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.VoiceMemos",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.VoiceOverUtility",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Dec 30, 2024, wapptunneld tried to establish a connection to eaa-byops-io.login.go.akamai-access.com. The request was allowed in Network Monitor.",
+      "process" : "identifier.6B676QFWFA\/wapptunneld",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Dec 30, 2024 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.APPLE\/com.apple.weather",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "notes" : "On Feb 19, 2025, WeatherWidget tried to establish a connection to multiple servers. The request was denied in Network Monitor.",
+      "process" : "identifier.APPLE\/com.apple.weather.widget",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Jan 15, 2025, WeChat tried to establish a connection to 183.47.124.77. The request was allowed via connection alert.",
+      "process" : "identifier.5A4RE8SF68\/com.tencent.xinWeChat",
+      "remote-addresses" : "183.47.124.77"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Jan 15, 2025, WeChat tried to establish a connection to 183.47.121.233. The request was allowed via connection alert.",
+      "process" : "identifier.5A4RE8SF68\/com.tencent.xinWeChat",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.5A4RE8SF68\/com.tencent.xinWeChat",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.7Z6EMTD2C6\/org.wireshark.Wireshark",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.94KV3E626L\/com.amazon.workspaces",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "On Jan 15, 2025, WPS Office tried to establish a connection to accountv2.wpsdns.com. The request was allowed via connection alert.",
+      "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
+      "remote-domains" : "wpsdns.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes" : "This rule was created on Jan 15, 2025 during the installation of Little Snitch. It can be used to allow network connections for all apps that were already installed at that time by activating the corresponding rule group.",
+      "process" : "identifier.BJ4HAAB9B3\/us.zoom.xos",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "notes" : "On Mar 7, 2025, ZoomUpdater tried to establish a connection to multiple servers. The request was denied in Network Monitor.",
+      "process" : "identifier.BJ4HAAB9B3\/us.zoom.updater",
+      "remote" : "any"
+    }
+  ]
+}
