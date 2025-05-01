@@ -99,9 +99,11 @@
       "remote" : "any"
     },
     {
-      "action" : "deny",
-      "direction" : "both",
-      "remote" : "any"
+      "action": "deny",
+      "process": "any",
+      "direction": "both",
+      "priority": "last",
+      "notes": "默认拒绝所有未匹配流量"
     },
     {
       "action" : "allow",
