@@ -3,75 +3,70 @@
   "description": "test",
   "rules": [
 
-    { "action": "allow", "process": "appGroup.macOS", "direction": "both", "notes": "macOS 后台与守护进程" },
-    { "action": "allow", "process": "identifier.APPLE/com.apple.mDNSResponder", "direction": "both", "notes": "DNS / Bonjour" },
+    { "action":"allow", "process":"appGroup.macOS", "direction":"both" },
+    { "action":"allow", "process":"identifier.APPLE/com.apple.mDNSResponder", "direction":"both" },
 
-    { "action": "allow", "process": "identifier.EQHXZ8M8AV/com.google.Chrome",           "direction": "outgoing", "notes": "Google Chrome" },
-    { "action": "allow", "process": "MLZF7K7B5R/at.obdev.littlesnitch.networking",        "direction": "outgoing", "notes": "Little Snitch Networking" },
-    { "action": "allow", "process": "identifier.5A4RE8SF68/com.tencent.xinWeChat",        "direction": "outgoing", "notes": "企业微信 / WeChat" },
-    { "action": "allow", "process": "identifier.YK4WKE5WAM/com.kingsoft.wpsoffice.mac",   "direction": "outgoing", "notes": "WPS Office" },
+    { "action":"allow", "process":"identifier.EQHXZ8M8AV/com.google.Chrome", "direction":"outgoing" },
+    { "action":"allow", "process":"MLZF7K7B5R/at.obdev.littlesnitch.networking", "direction":"outgoing" },
+    { "action":"allow", "process":"identifier.5A4RE8SF68/com.tencent.xinWeChat", "direction":"outgoing" },
+    { "action":"allow", "process":"identifier.YK4WKE5WAM/com.kingsoft.wpsoffice.mac", "direction":"outgoing" },
 
-    { "action": "allow", "process": "identifier.UBF8T346G9/com.microsoft.VSCode",         "direction": "outgoing", "notes": "Visual Studio Code" },
-    { "action": "allow", "process": "identifier.2ZEFAR8TH3/com.jetbrains.goland",         "direction": "outgoing", "notes": "GoLand" },
-    { "action": "allow", "process": "identifier.2ZEFAR8TH3/com.jetbrains.pycharm.ce",     "direction": "outgoing", "notes": "PyCharm CE" },
-    { "action": "allow", "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",        "direction": "outgoing", "notes": "iTerm 2" },
-    { "action": "allow", "process": "identifier.9BNSXJN65R/com.docker.docker",            "direction": "outgoing", "notes": "Docker Desktop" },
-    { "action":"allow", "code-signature":{ "requirement":"anchor apple generic and certificate leaf[subject.OU] = \"MLZF7K7B5R\"" }, "direction":"outgoing", "remote":"any", "notes":"Objective Development (Little Snitch) 全组件" },
+    { "action":"allow", "process":"identifier.UBF8T346G9/com.microsoft.VSCode", "direction":"outgoing" },
+    { "action":"allow", "process":"identifier.2ZEFAR8TH3/com.jetbrains.goland", "direction":"outgoing" },
+    { "action":"allow", "process":"identifier.2ZEFAR8TH3/com.jetbrains.pycharm.ce", "direction":"outgoing" },
+    { "action":"allow", "process":"identifier.H7V7XYVQ7D/com.googlecode.iterm2", "direction":"outgoing" },
+    { "action":"allow", "process":"identifier.9BNSXJN65R/com.docker.docker", "direction":"outgoing" },
 
-    { "action": "allow",
-      "code-signature": {
-        "requirement": "anchor apple generic and certificate leaf[subject.OU] = \"6B676QFWFA\""
+
+    { "action":"allow",
+      "process":{
+        "requirement":"anchor apple generic and certificate leaf[subject.OU] = \"6B676QFWFA\""
       },
-      "direction": "outgoing",
-      "remote": "any",
-      "notes": "Akamai 全组件 (TeamID 6B676QFWFA)"
+      "direction":"outgoing",
+      "remote":"any"
     },
 
-    { "action": "allow",
-      "code-signature": {
-        "requirement": "anchor apple generic and certificate leaf[subject.OU] = \"S6NQ524Y5V\""
+    { "action":"allow",
+      "process":{
+        "requirement":"anchor apple generic and certificate leaf[subject.OU] = \"S6NQ524Y5V\""
       },
-      "direction": "outgoing",
-      "remote": "any",
-      "notes": "SecureLink 全组件 (TeamID S6NQ524Y5V)"
+      "direction":"outgoing",
+      "remote":"any"
     },
 
-    { "action": "allow",
-      "code-signature": {
-        "requirement": "anchor apple generic and certificate leaf[subject.OU] = \"483DWKW443\""
+    { "action":"allow",
+      "process":{
+        "requirement":"anchor apple generic and certificate leaf[subject.OU] = \"483DWKW443\""
       },
-      "direction": "outgoing",
-      "remote": "any",
-      "notes": "Jamf 全组件 (TeamID 483DWKW443)"
+      "direction":"outgoing",
+      "remote":"any"
     },
 
-    { "action": "allow",
-      "code-signature": {
-        "requirement": "anchor apple generic and certificate leaf[subject.OU] = \"4AYE5J54KN\""
+    { "action":"allow",
+      "process":{
+        "requirement":"anchor apple generic and certificate leaf[subject.OU] = \"4AYE5J54KN\""
       },
-      "direction": "both",
-      "remote": "any",
-      "notes": "SentinelOne 全组件 (TeamID 4AYE5J54KN)"
+      "direction":"both",
+      "remote":"any"
     },
 
-    { "action": "allow",
-      "code-signature": {
-        "requirement": "anchor apple generic and certificate leaf[subject.OU] = \"JBRN9C6V7T\""
+    { "action":"allow",
+      "process":{
+        "requirement":"anchor apple generic and certificate leaf[subject.OU] = \"JBRN9C6V7T\""
       },
-      "direction": "outgoing",
-      "remote": "any",
-      "notes": "Lark / 飞书 全组件 (TeamID JBRN9C6V7T)"
+      "direction":"outgoing",
+      "remote":"any"
     },
 
-    { "action": "allow",
-      "remote-domains": "github.com,githubusercontent.com",
-      "ports": "22,443",
-      "direction": "outgoing",
-      "notes": "Git / GitHub"
+
+    { "action":"allow",
+      "remote-domains":"github.com,githubusercontent.com",
+      "ports":"22,443",
+      "direction":"outgoing"
     },
 
-    { "action": "allow", "remote": "local-net", "direction": "both", "notes": "公司内网 (LAN / VPN)" },
+    { "action":"allow", "remote":"local-net", "direction":"both" },
 
-    { "action": "deny", "process": "any", "direction": "both", "priority": "last", "notes": "默认拒绝所有未匹配流量" }
+    { "action":"deny",  "process":"any", "direction":"both", "priority":"last" }
   ]
 }
