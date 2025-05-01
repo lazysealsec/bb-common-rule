@@ -23,7 +23,7 @@
     { "action": "allow", "process": "identifier.2ZEFAR8TH3/com.jetbrains.pycharm.ce","direction": "outgoing" },
     { "action": "allow", "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",   "direction": "outgoing" },
     { "action": "allow", "process": "identifier.9BNSXJN65R/com.docker.docker",       "direction": "outgoing" },
-    { "action": "allow", "process": "identifier.N82YM748DZ/com.install4j.7318-9294-3757-1226.70","direction": "outgoing" }, /* BurpSuite */
+    { "action": "allow", "process": "identifier.N82YM748DZ/com.install4j.7318-9294-3757-1226.70","direction": "outgoing" },
 
     { "action": "allow", "process": "identifier.4AYE5J54KN/com.sentinelone.sentineld", "direction": "both" },
     { "action": "allow", "process": "identifier.483DWKW443/com.jamf.management.daemon","direction": "both" },
