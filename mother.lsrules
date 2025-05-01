@@ -1,37 +1,54 @@
 {
   "name": "Corp Mother Rules",
-  "description": "test",
+  "description": "Corp master allow-list, everything else denied",
   "rules": [
 
-    { "action": "allow", "process": "appGroup.macOS",                                              "direction": "both" },
-    { "action": "allow", "process": "identifier.APPLE/com.apple.mDNSResponder",                   "direction": "both" },
+    { "action": "allow", "process": "appGroup.macOS",                                           "direction": "both" },
+    { "action": "allow", "process": "identifier.APPLE/com.apple.mDNSResponder",                "direction": "both" },
+    { "action": "allow", "process": "identifier.APPLE/com.apple.configd",                      "direction": "incoming", "protocol": "udp", "ports": "68" },
+    { "action": "allow", "process": "identifier.APPLE/com.apple.trustd",                       "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.APPLE/com.apple.ocspd",                        "direction": "outgoing" },
 
-    { "action": "allow", "process": "identifier.EQHXZ8M8AV/com.google.Chrome",                    "direction": "outgoing" },
-    { "action": "allow", "process": "identifier.JBRN9C6V7T/com.larksuite.larkApp",                "direction": "outgoing" },
-    { "action": "allow", "process": "identifier.5A4RE8SF68/com.tencent.xinWeChat",                "direction": "outgoing" },
-    { "action": "allow", "process": "identifier.YK4WKE5WAM/com.kingsoft.wpsoffice.mac",           "direction": "outgoing" },
+    { "action": "allow", "ports": "443", "remote-domains": [ "icloud.com", "icloud-content.com" ] },
+    { "action": "allow", "remote-domains": [ "apple", "apple-cloudkit.com", "apple-mapkit.com", "apple.com",
+                                             "apple.news", "cdn-apple.com", "mzstatic.com" ] },
 
-    { "action": "allow", "process": "identifier.UBF8T346G9/com.microsoft.VSCode",                 "direction": "outgoing" },
-    { "action": "allow", "process": "identifier.2ZEFAR8TH3/com.jetbrains.goland",                 "direction": "outgoing" },
-    { "action": "allow", "process": "identifier.2ZEFAR8TH3/com.jetbrains.pycharm.ce",             "direction": "outgoing" },
-    { "action": "allow", "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",                "direction": "outgoing" },
-    { "action": "allow", "process": "identifier.9BNSXJN65R/com.docker.docker",                    "direction": "outgoing" },
+    { "action": "allow", "remote": "local-net",                                                 "direction": "both" },
+    { "action": "allow", "direction": "incoming", "protocol": "icmp" },
 
-    { "action": "allow", "process": "MLZF7K7B5R/at.obdev.littlesnitch.networking",                "direction": "outgoing", "notes": "下载规则组 / Geo DB" },
+    { "action": "allow", "process": "identifier.EQHXZ8M8AV/com.google.Chrome",                 "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.JBRN9C6V7T/com.larksuite.larkApp",             "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.5A4RE8SF68/com.tencent.xinWeChat",             "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.YK4WKE5WAM/com.kingsoft.wpsoffice.mac",        "direction": "outgoing" },
 
-    { "action": "allow", "process": "identifier.4AYE5J54KN/com.sentinelone.sentineld",            "direction": "both",     "remote": "any" },
-    { "action": "allow", "process": "identifier.S6NQ524Y5V/SecureLink_Client",                    "direction": "outgoing", "remote": "any" },
-    { "action": "allow", "process": "identifier.S6NQ524Y5V/SecureLink_Core",                      "direction": "outgoing", "remote": "any" },
-    { "action": "allow", "process": "identifier.S6NQ524Y5V/SecureLink_DP",                        "direction": "outgoing", "remote": "any" },
-    { "action": "allow", "process": "identifier.6B676QFWFA/wapptunneld",                          "direction": "outgoing", "remote": "any" },
-    { "action": "allow", "process": "identifier.6B676QFWFA/com.akamai.aztc.service",              "direction": "outgoing", "remote": "any" },
-    { "action": "allow", "process": "identifier.483DWKW443/com.jamf.management.daemon",           "direction": "outgoing", "remote": "any" },
-    { "action": "allow", "process": "identifier.C489D5E8E8/fpnpd",                                "direction": "both", "remote": "any" },
-    { "action": "allow", "process": "identifier.C489D5E8E8/EndPointClassifier",                   "direction": "both", "remote": "any" },
+    { "action": "allow", "process": "identifier.UBF8T346G9/com.microsoft.VSCode",              "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.2ZEFAR8TH3/com.jetbrains.goland",              "direction": "outgoing" },
+    { "action": "deny",  "process": "identifier.2ZEFAR8TH3/com.jetbrains.goland",              "remote-domains": "bybitsec.com",
+                                                                                               "via": "path.opt/homebrew/Cellar/openssh/*/bin/ssh" },
+    { "action": "allow", "process": "identifier.2ZEFAR8TH3/com.jetbrains.pycharm.ce",          "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",             "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.9BNSXJN65R/com.docker.docker",                 "direction": "outgoing" },
 
+    { "action": "allow", "process": "MLZF7K7B5R/at.obdev.littlesnitch.networking",             "direction": "outgoing" },
 
-    { "action": "allow", "remote": "local-net", "direction": "both" },
+    { "action": "allow", "process": "identifier.4AYE5J54KN/com.sentinelone.sentineld",         "direction": "both",     "remote": "any" },
+    { "action": "allow", "process": "identifier.S6NQ524Y5V/SecureLink_Client",                 "direction": "outgoing", "remote": "any" },
+    { "action": "allow", "process": "identifier.S6NQ524Y5V/SecureLink_Core",                   "direction": "outgoing", "remote": "any" },
+    { "action": "allow", "process": "identifier.S6NQ524Y5V/SecureLink_DP",                     "direction": "outgoing", "remote": "any" },
+    { "action": "allow", "process": "identifier.6B676QFWFA/wapptunneld",                       "direction": "outgoing", "remote": "any" },
+    { "action": "allow", "process": "identifier.6B676QFWFA/com.akamai.aztc.service",           "direction": "outgoing", "remote": "any" },
+    { "action": "allow", "process": "identifier.483DWKW443/com.jamf.management.daemon",        "direction": "outgoing", "remote": "any" },
+    { "action": "allow", "process": "identifier.483DWKW443/com.jamfsoftware.jamf",             "direction": "outgoing", "remote": "any" },
+    { "action": "allow", "process": "identifier.C489D5E8E8/EndPointClassifier",                "direction": "both",     "remote": "any" },
+    { "action": "allow", "process": "identifier.C489D5E8E8/fpnpd",                             "direction": "both",     "remote": "any" },
 
-    { "action": "deny",  "process": "any", "direction": "both", "priority": "last" }
+    { "action": "allow", "process": "identifier.N82YM748DZ/com.install4j.7318-9294-3757-1226.70",
+                                                                                               "direction": "outgoing", "remote": "any" },
+
+    { "action": "allow", "remote-domains": "github.com,githubusercontent.com",
+                         "ports": "22,443", "direction": "outgoing" },
+
+    { "action": "deny",  "process": "any",                                                     "direction": "both",
+                         "priority": "last" }
   ]
 }
