@@ -1,49 +1,54 @@
 {
-  "name": "Corp Mother Rules",
-  "description": "Office / Dev whitelist, everything else denied",
+  "name": "Corp Mother Rules – full",
+  "description": "Office & Dev allow-list; everything else denied",
   "rules": [
 
     { "action": "allow", "process": "appGroup.macOS", "direction": "both" },
     { "action": "allow", "process": "identifier.APPLE/com.apple.mDNSResponder", "direction": "both" },
-    { "action": "allow", "process": "identifier.APPLE/com.apple.ocspd", "direction": "outgoing" },
-    { "action": "allow", "process": "identifier.APPLE/com.apple.trustd", "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.APPLE/com.apple.ocspd",        "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.APPLE/com.apple.trustd",       "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.APPLE/com.apple.configd",      "direction": "incoming", "protocol": "udp", "ports": "68" },
 
-    { "action": "allow", "process": "identifier.MLZF7K7B5R/at.obdev.littlesnitch.networking", "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.MLZF7K7B5R/at.obdev.littlesnitch",             "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.MLZF7K7B5R/at.obdev.littlesnitch.networking",  "direction": "outgoing" },
 
-    { "action": "allow", "process": "identifier.EQHXZ8M8AV/com.google.Chrome",      "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.EQHXZ8M8AV/com.google.Chrome",     "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.EQHXZ8M8AV/com.google.GoogleUpdater","direction": "outgoing" },
     { "action": "allow", "process": "identifier.JBRN9C6V7T/com.larksuite.larkApp",  "direction": "outgoing" },
     { "action": "allow", "process": "identifier.5A4RE8SF68/com.tencent.xinWeChat",  "direction": "outgoing" },
-    { "action": "allow", "process": "identifier.YK4WKE5WAM/com.kingsoft.wpsoffice.mac", "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.YK4WKE5WAM/com.kingsoft.wpsoffice.mac","direction": "outgoing" },
 
-    { "action": "allow", "process": "identifier.UBF8T346G9/com.microsoft.VSCode",  "direction": "outgoing" },
-    { "action": "allow", "process": "identifier.2ZEFAR8TH3/com.jetbrains.goland",  "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.UBF8T346G9/com.microsoft.VSCode",    "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.2ZEFAR8TH3/com.jetbrains.goland",    "direction": "outgoing" },
     { "action": "allow", "process": "identifier.2ZEFAR8TH3/com.jetbrains.pycharm.ce","direction": "outgoing" },
-    { "action": "allow", "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",  "direction": "outgoing" },
-    { "action": "allow", "process": "identifier.9BNSXJN65R/com.docker.docker",      "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",   "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.9BNSXJN65R/com.docker.docker",       "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.N82YM748DZ/com.install4j.7318-9294-3757-1226.70","direction": "outgoing" }, /* BurpSuite */
 
     { "action": "allow", "process": "identifier.4AYE5J54KN/com.sentinelone.sentineld", "direction": "both" },
     { "action": "allow", "process": "identifier.483DWKW443/com.jamf.management.daemon","direction": "both" },
     { "action": "allow", "process": "identifier.483DWKW443/com.jamfsoftware.jamf",     "direction": "both" },
-    { "action": "allow", "process": "identifier.6B676QFWFA/wapptunneld",                "direction": "both" },
-    { "action": "allow", "process": "identifier.6B676QFWFA/com.akamai.aztc.service",    "direction": "both" },
 
-    { "action": "allow", "remote-hosts": [ "*.icloud.com", "icloud-content.com" ], "ports": "443", "direction": "outgoing" },
-    { "action": "allow", "remote-hosts": [
-        "*.apple.com",        "apple-cloudkit.com",
-        "apple-mapkit.com",   "cdn-apple.com",
-        "mzstatic.com" ],
-      "ports": "443", "direction": "outgoing"
-    },
+    { "action": "allow", "process": "identifier.6B676QFWFA/wapptunneld",              "direction": "both" },
+    { "action": "allow", "process": "identifier.6B676QFWFA/com.akamai.aztc.service",  "direction": "both" },
+    { "action": "allow", "process": "identifier.S6NQ524Y5V/SecureLink_Client",        "direction": "both" },
+    { "action": "allow", "process": "identifier.S6NQ524Y5V/SecureLink_Core",          "direction": "both" },
+    { "action": "allow", "process": "identifier.S6NQ524Y5V/SecureLink_DP",            "direction": "both" },
 
-    { "action": "allow", "remote-hosts": [ "github.com", "raw.githubusercontent.com" ], "ports": "22,443", "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.C489D5E8E8/EndPointClassifier", "direction": "both" },
+    { "action": "allow", "process": "identifier.C489D5E8E8/fpnpd",             "direction": "both" },
 
-    { "action": "allow", "remote-hosts": [ "*.npmjs.org" ], "ports": "443", "direction": "outgoing" },
-    { "action": "allow", "remote-hosts": [ "*.pypi.org", "*.pythonhosted.org" ], "ports": "443", "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.YCKFLA6N72/com.nssurge.surge-mac", "direction": "outgoing" },
+
+    { "action": "allow", "remote-domains": ["*.icloud.com","icloud-content.com"], "ports": "443", "direction": "outgoing" },
+    { "action": "allow", "remote-domains": ["*.apple.com","apple-cloudkit.com","apple-mapkit.com","cdn-apple.com","mzstatic.com"], "ports": "443", "direction": "outgoing" },
+    { "action": "allow", "remote-domains": ["github.com","raw.githubusercontent.com"], "ports": "22,443", "direction": "outgoing" },
+    { "action": "allow", "remote-domains": ["*.npmjs.org","registry.npmjs.org"], "ports": "443", "direction": "outgoing" },
+    { "action": "allow", "remote-domains": ["*.pypi.org","*.pythonhosted.org","files.pythonhosted.org"], "ports": "443", "direction": "outgoing" },
 
     { "action": "allow", "remote": "local-net", "direction": "both" },
-
     { "action": "allow", "protocol": "icmp", "direction": "incoming", "remote": "any" },
 
-    { "action": "deny", "process": "any", "direction": "both", "priority": "last", "notes": "默认拒绝其余所有流量" }
+    { "action": "deny", "process": "any", "direction": "both", "priority": "last" }
   ]
 }
