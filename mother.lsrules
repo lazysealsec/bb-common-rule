@@ -16,6 +16,7 @@
     { "action": "allow", "process": "identifier.2ZEFAR8TH3/com.jetbrains.pycharm.ce",     "direction": "outgoing", "notes": "PyCharm CE" },
     { "action": "allow", "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",        "direction": "outgoing", "notes": "iTerm 2" },
     { "action": "allow", "process": "identifier.9BNSXJN65R/com.docker.docker",            "direction": "outgoing", "notes": "Docker Desktop" },
+    { "action":"allow", "code-signature":{ "requirement":"anchor apple generic and certificate leaf[subject.OU] = \"MLZF7K7B5R\"" }, "direction":"outgoing", "remote":"any", "notes":"Objective Development (Little Snitch) 全组件" },
 
     { "action": "allow",
       "code-signature": {
