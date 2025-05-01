@@ -358,6 +358,26 @@
       "action" : "allow",
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote" : "any"
-    }
+    },
+    {
+  "action": "allow",
+  "remote-domains": [
+    "registry.npmjs.org",
+    "npmjs.org"
+  ],
+  "ports": "443",
+  "direction": "outgoing"
+},
+{
+  "action": "allow",
+  "remote-domains": [
+    "pypi.org",
+    "files.pythonhosted.org",
+    "pythonhosted.org"
+  ],
+  "ports": "443",
+  "direction": "outgoing"
+}
+
   ]
 }
