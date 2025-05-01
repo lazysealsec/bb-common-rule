@@ -23,8 +23,7 @@
 
     { "action": "allow", "process": "identifier.UBF8T346G9/com.microsoft.VSCode",              "direction": "outgoing" },
     { "action": "allow", "process": "identifier.2ZEFAR8TH3/com.jetbrains.goland",              "direction": "outgoing" },
-    { "action": "deny",  "process": "identifier.2ZEFAR8TH3/com.jetbrains.goland",              "remote-domains": "bybitsec.com",
-                                                                                               "via": "path.opt/homebrew/Cellar/openssh/*/bin/ssh" },
+    
     { "action": "allow", "process": "identifier.2ZEFAR8TH3/com.jetbrains.pycharm.ce",          "direction": "outgoing" },
     { "action": "allow", "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",             "direction": "outgoing" },
     { "action": "allow", "process": "identifier.9BNSXJN65R/com.docker.docker",                 "direction": "outgoing" },
