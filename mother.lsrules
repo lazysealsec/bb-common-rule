@@ -3,70 +3,35 @@
   "description": "test",
   "rules": [
 
-    { "action":"allow", "process":"appGroup.macOS", "direction":"both" },
-    { "action":"allow", "process":"identifier.APPLE/com.apple.mDNSResponder", "direction":"both" },
+    { "action": "allow", "process": "appGroup.macOS",                                              "direction": "both" },
+    { "action": "allow", "process": "identifier.APPLE/com.apple.mDNSResponder",                   "direction": "both" },
 
-    { "action":"allow", "process":"identifier.EQHXZ8M8AV/com.google.Chrome", "direction":"outgoing" },
-    { "action":"allow", "process":"MLZF7K7B5R/at.obdev.littlesnitch.networking", "direction":"outgoing" },
-    { "action":"allow", "process":"identifier.5A4RE8SF68/com.tencent.xinWeChat", "direction":"outgoing" },
-    { "action":"allow", "process":"identifier.YK4WKE5WAM/com.kingsoft.wpsoffice.mac", "direction":"outgoing" },
+    { "action": "allow", "process": "identifier.EQHXZ8M8AV/com.google.Chrome",                    "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.JBRN9C6V7T/com.larksuite.larkApp",                "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.5A4RE8SF68/com.tencent.xinWeChat",                "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.YK4WKE5WAM/com.kingsoft.wpsoffice.mac",           "direction": "outgoing" },
 
-    { "action":"allow", "process":"identifier.UBF8T346G9/com.microsoft.VSCode", "direction":"outgoing" },
-    { "action":"allow", "process":"identifier.2ZEFAR8TH3/com.jetbrains.goland", "direction":"outgoing" },
-    { "action":"allow", "process":"identifier.2ZEFAR8TH3/com.jetbrains.pycharm.ce", "direction":"outgoing" },
-    { "action":"allow", "process":"identifier.H7V7XYVQ7D/com.googlecode.iterm2", "direction":"outgoing" },
-    { "action":"allow", "process":"identifier.9BNSXJN65R/com.docker.docker", "direction":"outgoing" },
+    { "action": "allow", "process": "identifier.UBF8T346G9/com.microsoft.VSCode",                 "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.2ZEFAR8TH3/com.jetbrains.goland",                 "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.2ZEFAR8TH3/com.jetbrains.pycharm.ce",             "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",                "direction": "outgoing" },
+    { "action": "allow", "process": "identifier.9BNSXJN65R/com.docker.docker",                    "direction": "outgoing" },
 
+    { "action": "allow", "process": "MLZF7K7B5R/at.obdev.littlesnitch.networking",                "direction": "outgoing", "notes": "下载规则组 / Geo DB" },
 
-    { "action":"allow",
-      "process":{
-        "requirement":"anchor apple generic and certificate leaf[subject.OU] = \"6B676QFWFA\""
-      },
-      "direction":"outgoing",
-      "remote":"any"
-    },
-
-    { "action":"allow",
-      "process":{
-        "requirement":"anchor apple generic and certificate leaf[subject.OU] = \"S6NQ524Y5V\""
-      },
-      "direction":"outgoing",
-      "remote":"any"
-    },
-
-    { "action":"allow",
-      "process":{
-        "requirement":"anchor apple generic and certificate leaf[subject.OU] = \"483DWKW443\""
-      },
-      "direction":"outgoing",
-      "remote":"any"
-    },
-
-    { "action":"allow",
-      "process":{
-        "requirement":"anchor apple generic and certificate leaf[subject.OU] = \"4AYE5J54KN\""
-      },
-      "direction":"both",
-      "remote":"any"
-    },
-
-    { "action":"allow",
-      "process":{
-        "requirement":"anchor apple generic and certificate leaf[subject.OU] = \"JBRN9C6V7T\""
-      },
-      "direction":"outgoing",
-      "remote":"any"
-    },
+    { "action": "allow", "process": "identifier.4AYE5J54KN/com.sentinelone.sentineld",            "direction": "both",     "remote": "any" },
+    { "action": "allow", "process": "identifier.S6NQ524Y5V/SecureLink_Client",                    "direction": "outgoing", "remote": "any" },
+    { "action": "allow", "process": "identifier.S6NQ524Y5V/SecureLink_Core",                      "direction": "outgoing", "remote": "any" },
+    { "action": "allow", "process": "identifier.S6NQ524Y5V/SecureLink_DP",                        "direction": "outgoing", "remote": "any" },
+    { "action": "allow", "process": "identifier.6B676QFWFA/wapptunneld",                          "direction": "outgoing", "remote": "any" },
+    { "action": "allow", "process": "identifier.6B676QFWFA/com.akamai.aztc.service",              "direction": "outgoing", "remote": "any" },
+    { "action": "allow", "process": "identifier.483DWKW443/com.jamf.management.daemon",           "direction": "outgoing", "remote": "any" },
+    { "action": "allow", "process": "identifier.C489D5E8E8/fpnpd",                                "direction": "both", "remote": "any" },
+    { "action": "allow", "process": "identifier.C489D5E8E8/EndPointClassifier",                   "direction": "both", "remote": "any" },
 
 
-    { "action":"allow",
-      "remote-domains":"github.com,githubusercontent.com",
-      "ports":"22,443",
-      "direction":"outgoing"
-    },
+    { "action": "allow", "remote": "local-net", "direction": "both" },
 
-    { "action":"allow", "remote":"local-net", "direction":"both" },
-
-    { "action":"deny",  "process":"any", "direction":"both", "priority":"last" }
+    { "action": "deny",  "process": "any", "direction": "both", "priority": "last" }
   ]
 }
