@@ -2,14 +2,6 @@
   "description" : "母本",
   "name" : "master_rules",
   "rules" : [
-    {
-  "action": "deny",
-  "process": "any",
-  "direction": "both",
-  "remote": "any",
-  "require-untrusted-code-signature": true,
-  "priority": "first"
-},
 {
   "action": "allow",
   "process": "any",
