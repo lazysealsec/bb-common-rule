@@ -3,161 +3,162 @@
   "name" : "master_rules",
   "rules" : [
     {
-      "action" : "allow",
-      "ports" : "443",
-      "remote-domains" : [
-        "icloud-content.com",
-        "icloud.com"
-      ]
-    },
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "remote-domains" : [
-        "icloud-content.com",
-        "icloud.com"
-      ]
-    },
-    {
-      "action" : "allow",
-      "disabled" : true,
-      "ports" : "443",
-      "remote-domains" : [
-        "icloud-content.com",
-        "icloud.com"
-      ]
-    },
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "remote-domains" : [
-        "icloud-content.com",
-        "icloud.com"
-      ]
-    },
-    {
-      "action" : "allow",
-      "disabled" : true,
-      "ports" : "443",
-      "remote-domains" : [
-        "apple-cloudkit.com",
-        "apple-mapkit.com",
-        "apple.com",
-        "cdn-apple.com",
-        "mzstatic.com"
-      ]
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : [
-        "apple",
-        "apple-cloudkit.com",
-        "apple-mapkit.com",
-        "apple.com",
-        "apple.news",
-        "cdn-apple.com",
-        "mzstatic.com"
-      ]
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : [
-        "apple",
-        "apple-cloudkit.com",
-        "apple-mapkit.com",
-        "apple.com",
-        "apple.news",
-        "cdn-apple.com",
-        "mzstatic.com"
-      ]
-    },
-    {
-      "action" : "allow",
-      "disabled" : true,
-      "remote-domains" : [
-        "apple",
-        "apple-cloudkit.com",
-        "apple-mapkit.com",
-        "apple.com",
-        "apple.news",
-        "cdn-apple.com",
-        "mzstatic.com"
-      ]
-    },
-    {
-      "action" : "allow",
-      "disabled" : true,
-      "remote-domains" : [
-        "apple",
-        "apple-cloudkit.com",
-        "apple-mapkit.com",
-        "apple.com",
-        "apple.news",
-        "cdn-apple.com",
-        "mzstatic.com"
-      ]
-    },
-    {
-      "action" : "allow",
-      "disabled" : true,
-      "remote-domains" : [
-        "apple",
-        "apple-cloudkit.com",
-        "apple-mapkit.com",
-        "apple.com",
-        "apple.news",
-        "cdn-apple.com",
-        "mzstatic.com"
-      ]
-    },
-    {
-      "action" : "allow",
-      "direction" : "both",
-      "remote" : "local-net"
-    },
-    {
-      "action" : "allow",
-      "direction" : "both",
-      "remote" : "local-net"
-    },
-    {
-      "action" : "allow",
-      "direction" : "both",
-      "remote" : "local-net"
-    },
-    {
-      "action" : "allow",
-      "direction" : "incoming",
-      "protocol" : "icmp",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
-      "direction" : "incoming",
-      "protocol" : "icmp",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
-      "direction" : "incoming",
-      "protocol" : "icmp",
-      "remote" : "any"
-    },
- {
-  "action": "allow",
-  "process": "any",
-  "direction": "both",
-  "remote": "any",
-  "require-valid-code-signature": true,
-  "priority": "first"
-},
-{
   "action": "deny",
   "process": "any",
   "direction": "both",
   "remote": "any",
-  "priority": "last"
+  "require-untrusted-code-signature": true,
+  "priority": "first"
 },
+{
+  "action": "allow",
+  "process": "any",
+  "direction": "both",
+  "remote": "any",
+  "require-trusted-code-signature": true
+},
+
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "remote-domains" : [
+        "icloud-content.com",
+        "icloud.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "remote-domains" : [
+        "icloud-content.com",
+        "icloud.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "ports" : "443",
+      "remote-domains" : [
+        "icloud-content.com",
+        "icloud.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "remote-domains" : [
+        "icloud-content.com",
+        "icloud.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "ports" : "443",
+      "remote-domains" : [
+        "apple-cloudkit.com",
+        "apple-mapkit.com",
+        "apple.com",
+        "cdn-apple.com",
+        "mzstatic.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : [
+        "apple",
+        "apple-cloudkit.com",
+        "apple-mapkit.com",
+        "apple.com",
+        "apple.news",
+        "cdn-apple.com",
+        "mzstatic.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : [
+        "apple",
+        "apple-cloudkit.com",
+        "apple-mapkit.com",
+        "apple.com",
+        "apple.news",
+        "cdn-apple.com",
+        "mzstatic.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "remote-domains" : [
+        "apple",
+        "apple-cloudkit.com",
+        "apple-mapkit.com",
+        "apple.com",
+        "apple.news",
+        "cdn-apple.com",
+        "mzstatic.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "remote-domains" : [
+        "apple",
+        "apple-cloudkit.com",
+        "apple-mapkit.com",
+        "apple.com",
+        "apple.news",
+        "cdn-apple.com",
+        "mzstatic.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "remote-domains" : [
+        "apple",
+        "apple-cloudkit.com",
+        "apple-mapkit.com",
+        "apple.com",
+        "apple.news",
+        "cdn-apple.com",
+        "mzstatic.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "direction" : "both",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
+      "direction" : "both",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
+      "direction" : "both",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "protocol" : "icmp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "protocol" : "icmp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "protocol" : "icmp",
+      "remote" : "any"
+    },
     {
       "action" : "allow",
       "direction" : "both",
