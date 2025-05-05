@@ -143,21 +143,21 @@
       "protocol" : "icmp",
       "remote" : "any"
     },
-    {
-    "action": "allow",
-    "process": "any",
-    "direction": "both",
-    "remote": "any",
-    "require-trusted-code-signature": true,
-    "priority": "first"
-    },
-    {
-      "action" : "deny",
-      "process": "any",
-      "direction" : "both",
-      "remote" : "any",
-      "priority": "last"
-    },
+ {
+  "action": "allow",
+  "process": "any",
+  "direction": "both",
+  "remote": "any",
+  "require-trusted-code-signature": true,
+  "priority": "first"
+},
+{
+  "action": "deny",
+  "process": "any",
+  "direction": "both",
+  "remote": "any",
+  "priority": "last"
+}
     {
       "action" : "allow",
       "direction" : "both",
