@@ -1,6 +1,6 @@
 {
-  "description" : "",
-  "name" : "Eric202505051613",
+  "description" : "母本",
+  "name" : "master_rules",
   "rules" : [
     {
       "action" : "allow",
@@ -20,6 +20,7 @@
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "ports" : "443",
       "remote-domains" : [
         "icloud-content.com",
@@ -36,14 +37,7 @@
     },
     {
       "action" : "allow",
-      "ports" : "443",
-      "remote-domains" : [
-        "icloud-content.com",
-        "icloud.com"
-      ]
-    },
-    {
-      "action" : "allow",
+      "disabled" : true,
       "ports" : "443",
       "remote-domains" : [
         "apple-cloudkit.com",
@@ -79,6 +73,7 @@
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "remote-domains" : [
         "apple",
         "apple-cloudkit.com",
@@ -91,6 +86,20 @@
     },
     {
       "action" : "allow",
+      "disabled" : true,
+      "remote-domains" : [
+        "apple",
+        "apple-cloudkit.com",
+        "apple-mapkit.com",
+        "apple.com",
+        "apple.news",
+        "cdn-apple.com",
+        "mzstatic.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
       "remote-domains" : [
         "apple",
         "apple-cloudkit.com",
@@ -118,42 +127,25 @@
     },
     {
       "action" : "allow",
+      "direction" : "incoming",
+      "protocol" : "icmp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "protocol" : "icmp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "protocol" : "icmp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
       "direction" : "both",
-      "remote" : "local-net"
-    },
-    {
-      "action" : "allow",
-      "direction" : "both",
-      "remote" : "local-net"
-    },
-    {
-      "action" : "allow",
-      "direction" : "incoming",
-      "protocol" : "icmp",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
-      "direction" : "incoming",
-      "protocol" : "icmp",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
-      "direction" : "incoming",
-      "protocol" : "icmp",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
-      "direction" : "incoming",
-      "protocol" : "icmp",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
-      "direction" : "incoming",
-      "protocol" : "icmp",
       "remote" : "any"
     },
     {
@@ -175,22 +167,22 @@
     },
     {
       "action" : "allow",
-      "direction" : "both",
-      "process" : "appGroup.macOS",
+      "process" : "identifier.2BUA8C4S2C\/com.1password.1password",
       "remote" : "any"
     },
     {
       "action" : "allow",
-      "process" : "identifier.HUW3H8NBU9\/com.youdao.YoudaoDict",
+      "process" : "identifier.JQ525L2MZD\/com.adobe.ARMDCHelper",
       "remote" : "any"
     },
     {
       "action" : "allow",
-      "process" : "identifier.APPLE\/com.apple.AppStore",
+      "process" : "identifier.6B676QFWFA\/com.akamai.aztc.service",
       "remote" : "any"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.6B676QFWFA\/com.akamai.aztc.service",
       "remote" : "any"
     },
@@ -202,25 +194,13 @@
     },
     {
       "action" : "allow",
-      "process" : "identifier.9A5PCU4FSD\/com.xk72.Charles",
+      "process" : "identifier.N82YM748DZ\/com.install4j.7318-9294-3757-1226.70",
       "remote" : "any"
     },
     {
       "action" : "allow",
-      "process" : "identifier.2DC432GLL2\/com.openai.chat",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
-      "process" : "identifier.2DC432GLL2\/ChatGPTHelper",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
-      "direction" : "incoming",
-      "ports" : "68",
-      "process" : "identifier.APPLE\/com.apple.configd",
-      "protocol" : "udp",
+      "disabled" : true,
+      "process" : "identifier.N82YM748DZ\/com.install4j.7318-9294-3757-1226.70",
       "remote" : "any"
     },
     {
@@ -241,6 +221,12 @@
     },
     {
       "action" : "allow",
+      "process" : "identifier.C489D5E8E8\/EndPointClassifier",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.C489D5E8E8\/EndPointClassifier",
       "remote" : "any"
     },
@@ -257,6 +243,18 @@
     },
     {
       "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.43AQ936H96\/org.mozilla.firefox",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.C489D5E8E8\/fpnpd",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.C489D5E8E8\/fpnpd",
       "remote" : "any"
     },
@@ -278,7 +276,109 @@
     },
     {
       "action" : "allow",
-      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "disabled" : true,
+      "process" : "identifier.MLZF7K7B5R\/at.obdev.littlesnitch.networkextension",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.2DC432GLL2\/ChatGPTHelper",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.APPLE\/com.apple.AppStore",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.243LU875E5\/com.apple.TestFlight.ServiceExtension",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.UBF8T346G9\/com.microsoft.edgemac",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.UBF8T346G9\/com.microsoft.teams2",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.2DC432GLL2\/com.openai.chat",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.4C6364ACXT\/com.parallels.desktop.console",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.H7H8Q7M5CK\/com.postmanlabs.mac",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.DFD88F82SU\/com.sogou.inputmethod.sogou",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.88L2Q4487U\/com.tencent.meeting",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.BQR82RBBHL\/com.tinyspeck.slackmacgap",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.9A5PCU4FSD\/com.xk72.Charles",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.HUW3H8NBU9\/com.youdao.YoudaoDict",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "process" : "identifier.ME7L72N3S3\/com.zzd.XnipHelper",
+      "remote-domains" : "appcenter.ms"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.57T9237FN3\/net.whatsapp.WhatsApp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.7Z6EMTD2C6\/org.wireshark.Wireshark",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.6N38VWS5BX\/ru.keepcoder.Telegram",
       "remote" : "any"
     },
     {
@@ -288,26 +388,23 @@
     },
     {
       "action" : "allow",
-      "process" : "identifier.N82YM748DZ\/com.install4j.7318-9294-3757-1226.70",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
       "remote" : "any"
     },
     {
       "action" : "allow",
-      "process" : "identifier.YCKFLA6N72\/com.nssurge.surge-mac",
+      "disabled" : true,
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
       "remote" : "any"
     },
     {
       "action" : "allow",
-      "process" : "identifier.A2P9LX4JPN\/com.operasoftware.Installer.Opera",
+      "process" : "identifier.483DWKW443\/com.jamfsoftware.jamf",
       "remote" : "any"
     },
     {
       "action" : "allow",
-      "process" : "identifier.A2P9LX4JPN\/com.operasoftware.Opera",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.483DWKW443\/com.jamfsoftware.jamf",
       "remote" : "any"
     },
@@ -324,8 +421,19 @@
     },
     {
       "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.483DWKW443\/com.jamf.management.daemon",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
       "direction" : "both",
       "process" : "identifier.483DWKW443\/com.jamf.management.daemon",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.483DWKW443\/com.jamf.management.service",
       "remote" : "any"
     },
     {
@@ -340,11 +448,6 @@
     },
     {
       "action" : "allow",
-      "process" : "identifier.MLZF7K7B5R\/at.obdev.littlesnitch.networkextension",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
       "process" : "identifier.MLZF7K7B5R\/at.obdev.littlesnitch.networking",
       "remote" : "any"
     },
@@ -355,11 +458,18 @@
     },
     {
       "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.MLZF7K7B5R\/at.obdev.littlesnitch.softwareupdate",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
       "process" : "identifier.APPLE\/com.apple.mDNSResponder",
       "remote" : "any"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.APPLE\/com.apple.mDNSResponder",
       "remote" : "any"
     },
@@ -371,16 +481,6 @@
     },
     {
       "action" : "allow",
-      "process" : "identifier.UBF8T346G9\/com.microsoft.edgemac",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
-      "process" : "identifier.UBF8T346G9\/com.microsoft.teams2",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
       "process" : "identifier.APPLE\/com.apple.ocspd",
       "remote" : "any"
     },
@@ -391,21 +491,34 @@
     },
     {
       "action" : "allow",
-      "process" : "identifier.APPLE\/com.apple.ocspd",
+      "process" : "identifier.A2P9LX4JPN\/com.operasoftware.Opera",
       "remote" : "any"
     },
     {
       "action" : "allow",
-      "process" : "identifier.4C6364ACXT\/com.parallels.desktop.console",
+      "disabled" : true,
+      "process" : "identifier.A2P9LX4JPN\/com.operasoftware.Opera",
       "remote" : "any"
     },
     {
       "action" : "allow",
-      "process" : "identifier.H7H8Q7M5CK\/com.postmanlabs.mac",
+      "process" : "identifier.A2P9LX4JPN\/com.operasoftware.Installer.Opera",
       "remote" : "any"
     },
     {
       "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.A2P9LX4JPN\/com.operasoftware.Installer.Opera",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.APPLE\/com.apple.Safari",
       "remote" : "any"
     },
@@ -416,6 +529,12 @@
     },
     {
       "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.S6NQ524Y5V\/SecureLink_Client",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
       "direction" : "both",
       "process" : "identifier.S6NQ524Y5V\/SecureLink_Client",
       "remote" : "any"
@@ -427,6 +546,12 @@
     },
     {
       "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.S6NQ524Y5V\/SecureLink_Core",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
       "direction" : "both",
       "process" : "identifier.S6NQ524Y5V\/SecureLink_Core",
       "remote" : "any"
@@ -438,12 +563,29 @@
     },
     {
       "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.S6NQ524Y5V\/SecureLink_DP",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
       "direction" : "both",
       "process" : "identifier.S6NQ524Y5V\/SecureLink_DP",
       "remote" : "any"
     },
     {
       "action" : "allow",
+      "process" : "identifier.483DWKW443\/com.jamfsoftware.selfservice.mac",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.4AYE5J54KN\/com.sentinelone.sentineld",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.4AYE5J54KN\/com.sentinelone.sentineld",
       "remote" : "any"
     },
@@ -455,22 +597,7 @@
     },
     {
       "action" : "allow",
-      "process" : "identifier.BQR82RBBHL\/com.tinyspeck.slackmacgap",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
-      "process" : "identifier.DFD88F82SU\/com.sogou.inputmethod.sogou",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
-      "process" : "identifier.6N38VWS5BX\/ru.keepcoder.Telegram",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
-      "process" : "identifier.88L2Q4487U\/com.tencent.meeting",
+      "process" : "identifier.YCKFLA6N72\/com.nssurge.surge-mac",
       "remote" : "any"
     },
     {
@@ -480,17 +607,8 @@
     },
     {
       "action" : "allow",
-      "process" : "identifier.243LU875E5\/com.apple.TestFlight.ServiceExtension",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
-      "process" : "identifier.APPLE\/com.apple.trustd",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
-      "process" : "identifier.APPLE\/com.apple.trustd",
+      "disabled" : true,
+      "process" : "identifier.APPLE\/com.apple.Terminal",
       "remote" : "any"
     },
     {
@@ -515,6 +633,18 @@
     },
     {
       "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.UBF8T346G9\/com.microsoft.VSCode",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.6B676QFWFA\/wapptunneld",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.6B676QFWFA\/wapptunneld",
       "remote" : "any"
     },
@@ -531,32 +661,31 @@
     },
     {
       "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.APPLE\/com.apple.weather.widget",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
       "process" : "identifier.5A4RE8SF68\/com.tencent.xinWeChat",
       "remote" : "any"
     },
     {
       "action" : "allow",
-      "process" : "identifier.57T9237FN3\/net.whatsapp.WhatsApp",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
-      "process" : "identifier.7Z6EMTD2C6\/org.wireshark.Wireshark",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.94KV3E626L\/com.amazon.workspaces",
       "remote" : "any"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-addresses" : "*.*.*.*, *:*:*:*:*:*:*:*",
       "via" : "identifier.YK4WKE5WAM\/cn.wps.wpscloudsvr"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-addresses" : "*.*.*.*, *:*:*:*:*:*:*:*"
     },
@@ -568,102 +697,121 @@
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-hosts" : "drive.wps.cn",
       "via" : "identifier.YK4WKE5WAM\/cn.wps.wpscloudsvr"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-hosts" : "softbus-device.wps.cn",
       "via" : "identifier.YK4WKE5WAM\/cn.wps.wpscloudsvr"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-hosts" : "account.wps.com"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-hosts" : "drive.wps.cn"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-domains" : "ksord.com",
       "via" : "identifier.YK4WKE5WAM\/cn.wps.wpscloudsvr"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-domains" : "ksyun.com",
       "via" : "identifier.YK4WKE5WAM\/cn.wps.wpscloudsvr"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-domains" : "qwps.cn",
       "via" : "identifier.YK4WKE5WAM\/cn.wps.wpscloudsvr"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-domains" : "wps.cn",
       "via" : "identifier.YK4WKE5WAM\/cn.wps.wpscloudsvr"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-domains" : "docer.com"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-domains" : "kdocs.cn"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-domains" : "ksord.com"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-domains" : "ksosoft.com"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-domains" : "qq.com"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-domains" : "qwps.cn"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-domains" : "windows.com"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-domains" : "wps.cn"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-domains" : "wps.com"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote-domains" : "wpscdn.cn"
     },
     {
       "action" : "allow",
+      "disabled" : true,
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote" : "any",
       "via" : "identifier.YK4WKE5WAM\/cn.wps.wpscloudsvr"
@@ -672,16 +820,6 @@
       "action" : "allow",
       "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
       "remote" : "any"
-    },
-    {
-      "action" : "allow",
-      "process" : "identifier.YK4WKE5WAM\/com.kingsoft.wpsoffice.mac",
-      "remote" : "any"
-    },
-    {
-      "action" : "deny",
-      "process" : "identifier.ME7L72N3S3\/com.zzd.XnipHelper",
-      "remote-domains" : "appcenter.ms"
     }
   ]
 }
