@@ -182,6 +182,16 @@
     },
     {
       "action" : "allow",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.H7V7XYVQ7D\/com.googlecode.iterm2",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
       "process" : "identifier.483DWKW443\/com.jamfsoftware.jamf",
       "remote" : "any"
     },
@@ -305,6 +315,11 @@
     {
       "action" : "allow",
       "process" : "identifier.YCKFLA6N72\/com.nssurge.surge-mac",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.APPLE\/com.apple.Terminal",
       "remote" : "any"
     },
     {
