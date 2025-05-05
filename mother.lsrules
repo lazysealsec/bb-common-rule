@@ -148,12 +148,15 @@
     "process": "any",
     "direction": "both",
     "remote": "any",
-    "require-code-signature": true
+    "require-trusted-code-signature": true,
+    "priority": "first"
     },
     {
       "action" : "deny",
+      "process": "any",
       "direction" : "both",
-      "remote" : "any"
+      "remote" : "any",
+      "priority": "last"
     },
     {
       "action" : "allow",
