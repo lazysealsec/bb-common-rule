@@ -144,9 +144,11 @@
       "remote" : "any"
     },
     {
-      "action" : "allow",
-      "direction" : "both",
-      "remote" : "any"
+    "action": "allow",
+    "process": "any",
+    "direction": "both",
+    "remote": "any",
+    "require-code-signature": true
     },
     {
       "action" : "deny",
