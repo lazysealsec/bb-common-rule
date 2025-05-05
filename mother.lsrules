@@ -157,7 +157,7 @@
   "direction": "both",
   "remote": "any",
   "priority": "last"
-}
+},
     {
       "action" : "allow",
       "direction" : "both",
