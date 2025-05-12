@@ -11,6 +11,13 @@
 },
 
     {
+      "action": "allow",
+      "ports" : "any",
+      "direction": "both",
+      "remote" : "any",
+      "require-trusted-code-signature": false
+    },
+    {
       "action" : "allow",
       "ports" : "443",
       "remote-domains" : [
