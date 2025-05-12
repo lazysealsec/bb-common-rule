@@ -14,8 +14,14 @@
       "action": "allow",
       "ports" : "any",
       "direction": "both",
-      "remote" : "any",
-      "require-trusted-code-signature": false
+      "require-trusted-code-signature": false,
+      "remote-domains": [
+      "larksuite.com",            
+      "byops.io",
+      "bitsvc.io",
+      "bybit.com",   
+      "bybitsec.com"      
+  ]
     },
     {
       "action" : "allow",
