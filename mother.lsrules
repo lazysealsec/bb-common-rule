@@ -12,13 +12,12 @@
 
 {
   "action": "allow",
-  "direction": "both",
-  "process": "any",
   "remote-domains": [
     "bybitsec.com",
     "github.com",
     "larksuite.com",
-    "bitsvc.io"
+    "bitsvc.io",
+    "byops.io"
   ],
   "requiresTrustedSignatureForAnyProcess": false
 },
