@@ -14,10 +14,10 @@
     "action": "allow",
     "direction":"both",
     "remote-domains": [
-    "bybitsec.com",
-    "github.com",
-    "larksuite.com",
-    "bitsvc.io"
+    "*.bybitsec.com",
+    "*.github.com",
+    "*.larksuite.com",
+    "*.bitsvc.io"
   ],
   "requiresTrustedSignatureForAnyProcess": false
 }
