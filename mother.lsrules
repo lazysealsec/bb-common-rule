@@ -10,18 +10,18 @@
   "require-trusted-code-signature": true
 },
 
-    {
-    "action": "allow",
-    "direction":"both",
-    "remote-domains": [
-    "*.bybitsec.com",
-    "*.github.com",
-    "*.larksuite.com",
-    "*.bitsvc.io"
+{
+  "action": "allow",
+  "direction": "both",
+  "process": "any",
+  "remote-domains": [
+    "bybitsec.com",
+    "github.com",
+    "larksuite.com",
+    "bitsvc.io"
   ],
   "requiresTrustedSignatureForAnyProcess": false
-}
-,
+},
     {
       "action" : "allow",
       "ports" : "443",
