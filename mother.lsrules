@@ -12,7 +12,6 @@
 
     {
       "action": "allow",
-      "ports" : "any",
       "direction": "both",
       "require-trusted-code-signature": false,
       "remote-domains": [
