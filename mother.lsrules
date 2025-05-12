@@ -2,13 +2,6 @@
   "description" : "母本",
   "name" : "master_rules",
   "rules" : [
-{
-  "action": "allow",
-  "process": "any",
-  "direction": "both",
-  "remote": "any",
-  "require-trusted-code-signature": true
-},
 
 {
   "action": "allow",
@@ -20,6 +13,13 @@
     "byops.io"
   ],
   "requiresTrustedSignatureForAnyProcess": false
+},
+{
+  "action": "allow",
+  "process": "any",
+  "direction": "both",
+  "remote": "any",
+  "require-trusted-code-signature": true
 },
     {
       "action" : "allow",
