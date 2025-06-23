@@ -5,6 +5,7 @@
 
 {
   "action": "allow",
+   "process": "any",
   "remote-domains": [
     "bybitsec.com",
     "github.com",
